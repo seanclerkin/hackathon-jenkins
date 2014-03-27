@@ -1,6 +1,6 @@
 FROM lzhang/jenkins
 
-RUN apt-get install redis-server -y
+RUN apt-get install redis-server git -y
 RUN update-rc.d redis-server disable
 RUN service redis-server stop
 RUN apt-get install docker -y
